@@ -11,6 +11,11 @@
             h3{
                 color: crimson;
             }
+            a{
+                font-size: larger;
+                text-decoration: none;
+                color: black;   
+            }
            table,th,td {
                  border: 3px solid black;
                  border-collapse: collapse;
@@ -21,13 +26,16 @@
                  width: 800px;
                  margin: auto;
             }
+            body,head{
+                background-color: rgba(250, 235, 215, 0.459);
+            }
         </style>
     </head>
     <body>
         <header>
-            <div style="display: flex; gap: 30px;">
-                <div >
-                    <a href="./essay.html" tabindex="1" target="_top">Home</a>
+            <div style="display: flex; gap: 100px; background-color: antiquewhite; height: 50px; align-items: center; ">
+                <div style="padding-left: 30px;" >
+                    <a href="./essay.html" tabindex="1" target="_self">Home</a>
                 </div>
                 <div>
                     <a href="./My vlogs.html#img" tabindex="2" target="_blank">Images</a>
@@ -38,7 +46,12 @@
                 <div>
                     <a href="./Table.html" tabindex="4" target="_self">My Portfolio</a>
                 </div>
+                <div style="margin-left: auto; margin-right: 30px;">
+                    <a href="./My Profile.html" tabindex="5" target="_blank">My Profile</a>
+                </div>
             </div>
+            
+        </header>
         <h1>My Portfolio</h1>
         <br>
         <hr>
