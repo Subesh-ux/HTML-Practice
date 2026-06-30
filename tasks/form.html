@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<head>
+    <title>Product_Form</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        .forms{
+            display: flex;
+            justify-content: center;
+        }
+        table{
+                background-color: cadetblue;
+        }
+        .label1{
+             font-size: larger;
+             font-family: 'Times New Roman', Times, serif;
+             text-align: left;
+             
+        }
+        .input1{
+            text-align: end;
+        }
+        .imgs{
+            display: flex;
+            justify-content: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Product Details</h1>
+    </div>
+    <div class="forms">
+    <form method="post" enctype="multipart/form-data">
+        <table style="text-align: center; border-spacing:100px 20px ;" >
+            <tr>
+                <td class="label1">
+                    <label for="P_Name" >Product Name</label>
+                </td>
+                <td class="input1">
+                    <input type="text" id="P_Name" name="Product-Name">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="P_Size" >Product Size</label>
+                </td>
+                <td class="input1">
+                    <input type="number" id="P_Size" name="Product-Size">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="Mfd" >Manufacture Date</label>
+                </td>
+                <td class="input1">
+                    <input type="date" name="Manufacture-Date" id="Mfd">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="exp" >Expiry Date</label>
+                </td>
+                <td class="input1">
+                    <input type="date" name="Expiry-Date" id="Exp">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="P_img" >Product Image</label>
+                </td>
+                <td class="imgs">
+                    <input type="file" id="P_img" name="Product-Image">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="P_Quality" >Product Quality</label>
+                </td>
+                <td class="input1">
+                    <select name="Quality" id="P_Quality">
+                        <option value="">Please Choose the Quality</option>
+                        <option value="First_Quality">First Quality</option>
+                        <option value="Second_Quality">Second Quality</option>
+                        <option value="Third_Quality">Third Quality</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="price" >Price</label>
+                </td>
+                <td class="input1">
+                    <input type="number" id="price" name="Price">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="mail" >Contact US</label>
+                </td>
+                <td class="input1">
+                    <input type="email" name="mailid" id="mail">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="website" >To Order</label>
+                </td>
+                <td class="input1">
+                    <input type="url" name="website-link" id="website" placeholder="www.google.com">
+                </td>
+            </tr>
+            <tr >
+                <td colspan="2">
+                    <button type="submit">Submit</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</body>
