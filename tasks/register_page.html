@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <title>Register Page</title>
+    <style>
+        .head-container{
+            display: flex;
+            justify-content: center;
+        }
+        header{
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 40px;
+        }
+        .head-content{
+            text-align: center;
+            
+        }
+        .form-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+        .textbox{
+            width: 400px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+                <img src="./asserts/Images/tnpsc_logo.jpg" alt="TamilNadu Logo" width="120px" height="120px">
+            </div>
+        <div class="head-container">
+            
+            <div class="head-content" >
+                <h1 style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">TAMILNADU PUBLIC SERVICE COMMISSION</h1>
+                <h4>COMBINED CIVIL SERVICES EXAMINATION-II</h4>
+                <h4>(GROUP-II SERVICES) (NOTIFICATION NO. 11/2025)</h4>
+                <h3>DATE OF MAIN EXAMINATION: 22.02.2026 FN AND 15.03.2026 AN</h3>
+            </div>
+        </div>
+        <hr>
+    </header>
+
+    <main>
+        <form action="" >
+            <div class="form-container">
+            <div>
+                <label for="Reg_no">Register No</label>
+                <span>*</span>
+            <br>
+                <input type="text" name="Register_num" id="Reg_no" required class="textbox">
+            </div>
+            <div>
+                <label for="DOB">Date of Birth</label>
+                <span>*</span>
+            <br>
+                <input type="date" max="02-07-2026" required name="dateofbirth" id="DOB" class="textbox">
+            </div>
+            <div>
+                <label for="VQ">Verification Question</label>
+                <span>*</span>
+               <br>
+                <input type="text" readonly value="What is 18 + 5 ?" name="question " class="textbox"><br><br>
+                <input type="number" name="Answer" id="VQ" placeholder="Enter answer (number)" class="textbox">
+                
+            </div>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+            </div>
+        </form>
+    </main>
+</body>
