@@ -28,18 +28,23 @@
     </style>
 </head>
 <body>
-    <div>
+    <header>
         <h1>Product Details</h1>
-    </div>
+    </header>
     <div class="forms">
     <form method="post" enctype="multipart/form-data">
         <table style="text-align: center; border-spacing:100px 20px ;" >
             <tr>
                 <td class="label1">
-                    <label for="P_Name" >Product Name</label>
+                    <span>
+                        <label for="P_Name" >Product Name</label>
+                    </span>
+                    <span style="color: red;">
+                        *
+                    </span>
                 </td>
                 <td class="input1">
-                    <input type="text" id="P_Name" name="Product-Name">
+                    <input type="text" id="P_Name" name="Product-Name" required>
                 </td>
             </tr>
             <tr>
@@ -53,17 +58,23 @@
             <tr>
                 <td class="label1">
                     <label for="Mfd" >Manufacture Date</label>
+                    <span style="color: red;">
+                        *
+                    </span>
                 </td>
                 <td class="input1">
-                    <input type="date" name="Manufacture-Date" id="Mfd">
+                    <input type="date" name="Manufacture-Date" id="Mfd" value="" required>
                 </td>
             </tr>
             <tr>
                 <td class="label1">
                     <label for="exp" >Expiry Date</label>
+                    <span style="color: red;">
+                        *
+                    </span>
                 </td>
                 <td class="input1">
-                    <input type="date" name="Expiry-Date" id="Exp">
+                    <input type="date" name="Expiry-Date" id="Exp" required>
                 </td>
             </tr>
             <tr>
@@ -100,7 +111,17 @@
                     <label for="mail" >Contact US</label>
                 </td>
                 <td class="input1">
-                    <input type="email" name="mailid" id="mail">
+                    <input type="email" name="mailid" id="mail" placeholder="EX : example@gmail.com">
+                </td>
+            </tr>
+            <tr>
+                <td class="label1">
+                    <label for="phone" >Contact Number</label>
+                </td>
+                <td class="input1">
+                    <input type="tel" name="contact-number" id="phone" 
+                    minlength="6"
+                    maxlength="10">
                 </td>
             </tr>
             <tr>
